@@ -1,0 +1,90 @@
+
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+}
+@font-face {
+	font-family: 'Teddy Bear';
+	src: url('../fonts/teddy_bear.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/teddy_bear.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/teddy_bear.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/teddy_bear.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+header, h2, h3 {    
+	font-family: 'Teddy Bear', sans-serif;
+	line-height: 1.55;
+}
+
+.main-header {
+	position: relative;
+}  
+
+.layers {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.layer {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+}
+
+.layer__header {
+	z-index: 1;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: var(--text);
+	text-shadow: 0 0 15px #9d822b;
+}
+
+.layers__title {
+	font-size: calc(var(--index) * 2.65);
+	letter-spacing: calc(var(--index) / 2.25);
+}
+
+.layers__caption {
+	font-size: calc(var(--index) / 1.175);
+	letter-spacing: calc(var(--index) / 3.5);
+	margin-top: calc(var(--index) * -.75);
+}
+
+.main-article {
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+}
+
+.main-article2 {
+	min-height: 100vh;
+	background-size: cover;
+	color: rgb(255, 255, 14);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bigText {
+    font-size: 25px;
+}
+
+a {
+    color: rgb(163, 219, 229);
+}
+ 
